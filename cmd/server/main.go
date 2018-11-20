@@ -7,10 +7,18 @@ import (
 )
 
 func main() {
-	joke, err := cs.GetJoke()
+	js := cs.New("https://api.yomomma.info/", "https://foaas.com/asshole")
+
+	joke, err := js.GetJoke()
+	if err != nil {
+		panic(err)
+	}
+
+	fo, err := js.FuckOffAsshole("something")
 	if err != nil {
 		panic(err)
 	}
 
 	log.Println(joke)
+	log.Println(fo)
 }

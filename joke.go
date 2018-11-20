@@ -55,7 +55,7 @@ func (s *svc) FuckOffAsshole(name string) (interface{}, error) {
 	if err != nil {
 		return nil, err
 	}
-
+	req.Header.Set("Accept", "application/json")
 	resp, err := client.Do(req)
 	if err != nil {
 		return nil, err
