@@ -1,3 +1,3 @@
 # concurrencystuff
 
-## Random thoughts when trying concurrency
+## Random thoughts when trying concurrency and go modules
