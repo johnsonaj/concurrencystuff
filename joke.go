@@ -49,7 +49,7 @@ func (s *svc) GetJoke() (interface{}, error) {
 // FuckOff gets content from FOAAS (Fuck off as a service)
 func (s *svc) FuckOffAsshole(name string) (interface{}, error) {
 	client := &http.Client{}
-	url := fmt.Sprintf("%s/%s", s.foaasURL, name)
+	url := fmt.Sprintf("%s/asshole/%s", s.foaasURL, name)
 
 	req, err := http.NewRequest(http.MethodGet, url, nil)
 	if err != nil {
